@@ -1,7 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+// vite.config.js
+import { defineConfig } from 'vite';
+import postcss from 'rollup-plugin-postcss';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  // other configurations...
+  plugins: [
+    postcss(),
+    // other plugins...
+  ],
+});
+
